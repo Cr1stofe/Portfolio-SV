@@ -27,9 +27,9 @@ export function MenuMobile({ menuIsVisible, theme, setMenuIsVisible, setTheme }:
         >
             <X size={27} onClick={() => setMenuIsVisible(false)}/>
             <nav>
-                <Link to='about' spy={true} smooth={true} duration={500}>SOBRE MIM</Link>
-                <Link to='projects' spy={true} smooth={true} duration={500}>MEUS PROJETOS</Link>
-                <Link to='contact' spy={true} smooth={true} duration={500}>CONTATO</Link>
+                <Link to='about' spy={true} smooth={true} duration={500} onClick={() => setMenuIsVisible(false)}>SOBRE MIM</Link>
+                <Link to='projects' spy={true} smooth={true} duration={500} onClick={() => setMenuIsVisible(false)}>MEUS PROJETOS</Link>
+                <Link to='contact' spy={true} smooth={true} duration={500} onClick={() => setMenuIsVisible(false)}>CONTATO</Link>
 
                 {theme === 'light' 
                     ? <Sun 

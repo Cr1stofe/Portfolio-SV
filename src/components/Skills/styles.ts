@@ -11,12 +11,14 @@ export const SkillsContainer = styled.div`
     grid-template-columns: 24rem 1fr;
     grid-template-rows: 17rem 17rem;
     gap: 2rem;
+    transition: .5s;
 
     @media (max-width: 1024px) {
         height: fit-content;
         display: flex;
         flex-direction: column;
         max-width: 35rem;
+        padding: 3.5rem 2rem;
     }
 `
 
@@ -24,6 +26,7 @@ const DefaultCards = styled.div`
     border-radius: 20px;
     padding: 2rem;
     font-size: 1.5rem;
+    transition: .5s;
 
     h1 {
         display: flex;

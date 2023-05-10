@@ -9,6 +9,11 @@ export const AboutMeContainer = styled.div`
     margin: 0 auto;
     padding: 5rem;
     gap: 10rem;
+    transition: .5s;
+
+    @media (max-width: 1300px) {
+        gap: 7rem;
+    }
 
     @media (max-width: 1024px) {
         flex-direction: column;

@@ -20,6 +20,12 @@ export const ContactTitle = styled.p`
     max-width: 40rem;
     text-align: right;
     margin: 6rem 15rem 6rem 0;
+    transition: .5s;
+
+    @media (max-width: 1300px) {
+        font-size: 4rem;
+        max-width: 30rem;
+    }
 
     @media (max-width: 1024px) {
         font-size: 2.8rem;
@@ -33,6 +39,7 @@ export const ContactButtons = styled.div`
     display: flex;
     margin: 0 auto;
     gap: 10rem;
+    transition: .5s;
 
     button {
         display: flex;
@@ -48,6 +55,10 @@ export const ContactButtons = styled.div`
         font-family: 'Montserrat', sans-serif;
         padding: 1.25rem 2rem;
         cursor: pointer;
+    }
+
+    @media (max-width: 1300px) {
+        gap: 4.5rem;
     }
 
     @media (max-width: 1024px) {

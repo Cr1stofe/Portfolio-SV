@@ -11,7 +11,7 @@ export const MyProjectsContainer = styled.div`
 
     @media (max-width: 1024px) {
         height: fit-content;
-        padding: 2rem;
+        padding: 3.5rem 2rem;
         gap: 2rem;
     }
 `
@@ -20,6 +20,7 @@ export const ProjectsButtons = styled.div`
     display: flex;
     margin: 0 auto;
     gap: 10rem;
+    transition: 0.5s;
 
     button {
         display: flex;
@@ -35,6 +36,10 @@ export const ProjectsButtons = styled.div`
         font-family: 'Montserrat', sans-serif;
         padding: 1.25rem 3rem;
         cursor: pointer;
+    }
+
+    @media (max-width: 1300px) {
+        gap: 4.5rem;
     }
 
     @media (max-width: 1024px) {
@@ -55,6 +60,7 @@ export const Text = styled.div`
     gap: 2rem;
     max-width: 30rem;
     margin: 0 15rem;
+    transition: .5s;
 
     h1 {
         font-size: 5rem;
@@ -67,6 +73,14 @@ export const Text = styled.div`
         font-size: 1.25rem;
         font-family: 'Montserrat', sans-serif;
         color: ${props => props.theme["font-color"]};
+    }
+
+    @media (max-width: 1300px) {
+        max-width: 30rem;
+
+        h1 {
+            font-size: 4rem;
+        }
     }
 
     @media (max-width: 1024px) {
