@@ -4,12 +4,20 @@ export const SkillsContainer = styled.div`
     height: 100vh;
     max-width: 74rem;
     margin: 0 auto;
+    padding: 2rem;
     display: grid;
     align-content: center;
     justify-content: center;
     grid-template-columns: 24rem 1fr;
     grid-template-rows: 17rem 17rem;
     gap: 2rem;
+
+    @media (max-width: 1024px) {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        max-width: 35rem;
+    }
 `
 
 const DefaultCards = styled.div`
@@ -22,6 +30,14 @@ const DefaultCards = styled.div`
         font-family: 'Cardo', serif;
         font-size: 2.5rem;
         font-weight: bold;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 1.25rem;
+
+        h1 {
+            font-size: 2.3rem;
+        }
     }
 `
 
@@ -50,6 +66,13 @@ export const HardSkills = styled(DefaultCards)`
 
     ul {
         padding-left: 3rem;
+    }
+
+    @media (max-width: 800px) {
+        div {
+            flex-direction: column;
+            gap: 0;
+        }
     }
 `
 

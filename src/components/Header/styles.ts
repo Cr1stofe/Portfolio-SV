@@ -35,4 +35,19 @@ export const HeaderContainer = styled.header`
             cursor: pointer;
         }
     }
+
+    section {
+        display: none;
+    }
+
+    @media (max-width: 780px) {
+
+        nav{
+            display: none;
+        }
+
+        section {
+            display: block;
+        }
+    }
 `

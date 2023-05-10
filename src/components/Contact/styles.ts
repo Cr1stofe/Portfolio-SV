@@ -7,6 +7,10 @@ export const ContactContainer = styled.div`
     align-items: flex-end;
     justify-content: center;
     gap: 3rem;
+
+    @media (max-width: 1024px) {
+        padding: 2rem;
+    }
 `
 
 export const ContactTitle = styled.p`
@@ -16,6 +20,13 @@ export const ContactTitle = styled.p`
     max-width: 40rem;
     text-align: right;
     margin: 6rem 15rem 6rem 0;
+
+    @media (max-width: 1024px) {
+        font-size: 2.8rem;
+        max-width: 15rem;
+        margin: 0 auto;
+        text-align: left;
+    }
 `
 
 export const ContactButtons = styled.div`
@@ -37,5 +48,16 @@ export const ContactButtons = styled.div`
         font-family: 'Montserrat', sans-serif;
         padding: 1.25rem 2rem;
         cursor: pointer;
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 2rem;
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            width: 13rem;
+        }
     }
 `

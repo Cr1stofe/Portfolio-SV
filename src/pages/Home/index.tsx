@@ -6,6 +6,8 @@ import { Skills } from "../../components/Skills";
 import { MyProjects } from "../../components/MyProjects";
 import { Contact } from "../../components/Contact";
 import { Footer } from "../../components/Footer";
+import { useState } from "react";
+import { MenuMobile } from "../../components/MenuMobile";
 
 interface ThemeProps {
     theme: string
@@ -13,18 +15,29 @@ interface ThemeProps {
 }
 
 export function Home({theme, setTheme}: ThemeProps) {
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
+
     return (
-        <HomeContainer>
-            <Header 
+        <>
+            <MenuMobile 
+                menuIsVisible = {menuIsVisible}
+                setMenuIsVisible = {setMenuIsVisible}
                 theme={theme}
                 setTheme={setTheme}
             />
-            <Hero theme={theme}/>
-            <AboutMe theme={theme}/>
-            <Skills />
-            <MyProjects />
-            <Contact />
-            <Footer theme={theme}/>
-        </HomeContainer>
+            <HomeContainer>
+                <Header 
+                    theme={theme}
+                    setTheme={setTheme}
+                    setMenuIsVisible = {setMenuIsVisible}
+                />
+                <Hero theme={theme}/>
+                <AboutMe theme={theme}/>
+                <Skills />
+                <MyProjects />
+                <Contact />
+                <Footer theme={theme}/>
+            </HomeContainer>
+        </>
     );
 }

@@ -1,8 +1,7 @@
-import { HeaderContainer } from './styles';
-import { Sun, Moon, List } from 'phosphor-react';
-import logo from '../../assets/logo.svg';
-import logoDark from '../../assets/logoDark.svg';
+import { MenuContainer } from "./styles"
 import { Link } from 'react-scroll'
+import { Sun, Moon, X } from '@phosphor-icons/react'
+import { useEffect } from "react"
 
 interface ThemeProps {
     theme: string
@@ -10,17 +9,23 @@ interface ThemeProps {
 }
 
 interface MenuProps {
+    menuIsVisible: boolean
     setMenuIsVisible: (menuIsVisible: boolean) => void
 }
 
-interface HeaderProps extends ThemeProps, MenuProps {}
+interface ThemeMobileProps extends ThemeProps, MenuProps {}
 
-export function Header({ theme, setTheme, setMenuIsVisible }: HeaderProps) {
-    const color = theme === 'light' ? '#B82625' : '#F8DCD8'
+export function MenuMobile({ menuIsVisible, theme, setMenuIsVisible, setTheme }: ThemeMobileProps) {
+    useEffect(() => {
+        document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
+    }, [menuIsVisible])
 
     return (
-        <HeaderContainer>
-            <Link to='hero' spy={true} smooth={true} duration={500}> <img src={theme === 'light' ? logo : logoDark}/> </Link>
+        <MenuContainer 
+            isVisible = {menuIsVisible}
+            colorTheme = {theme}
+        >
+            <X size={27} onClick={() => setMenuIsVisible(false)}/>
             <nav>
                 <Link to='about' spy={true} smooth={true} duration={500}>SOBRE MIM</Link>
                 <Link to='projects' spy={true} smooth={true} duration={500}>MEUS PROJETOS</Link>
@@ -39,10 +44,6 @@ export function Header({ theme, setTheme, setMenuIsVisible }: HeaderProps) {
                     />
                 }
             </nav>
-
-            <section>
-                <List size={27} color={color} onClick={() => setMenuIsVisible(true)} className='mobile'/>
-            </section>
-        </HeaderContainer>
-    );
+        </MenuContainer>
+    )
 }

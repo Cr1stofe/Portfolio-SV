@@ -9,12 +9,26 @@ export const AboutMeContainer = styled.div`
     margin: 0 auto;
     padding: 5rem;
     gap: 10rem;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        height: fit-content;
+        padding: 2rem;
+        gap: 0.5rem;
+    }
 `
 
 export const Photo = styled.div`
     img {
         width: 23rem;
         height: 35rem;
+    }
+
+    @media (max-width: 480px) {
+        img {
+            width: 15rem;
+            height: 27rem;
+        }
     }
 `
 
@@ -53,6 +67,22 @@ export const HelloAndEducation = styled.div`
             font-size: 2.5rem;
             font-family: 'Cardo', serif;
             font-weight: bold;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        section {
+            h2 {
+                font-size: 2rem;
+            }
         }
     }
 `

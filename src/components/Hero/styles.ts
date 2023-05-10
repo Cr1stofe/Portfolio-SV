@@ -20,7 +20,7 @@ export const HeroContainer = styled.div`
         background: ${props => props.theme["secondary-color"]};
         max-width: 28rem;
         height: 4rem;
-        color: ${props => props.theme["tertiary-color"]};
+        color: ${props => props.theme["primary-color"]};
         border-radius: 30px;
         font-size: 1.125rem;
         font-family: 'Fahkwang';
@@ -38,5 +38,18 @@ export const HeroContainer = styled.div`
         border: none;
         margin-top: 8rem;
         cursor: pointer;
+    }
+
+    @media (max-width: 1024px) {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            max-width: 20rem;
+            height: 3rem;
+        }
     }
 `

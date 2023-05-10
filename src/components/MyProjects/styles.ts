@@ -8,6 +8,12 @@ export const MyProjectsContainer = styled.div`
     gap: 5rem;
     align-items: flex-start;
     justify-content: center;
+
+    @media (max-width: 1024px) {
+        height: fit-content;
+        padding: 2rem;
+        gap: 2rem;
+    }
 `
 
 export const ProjectsButtons = styled.div`
@@ -30,6 +36,17 @@ export const ProjectsButtons = styled.div`
         padding: 1.25rem 3rem;
         cursor: pointer;
     }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 2rem;
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            width: 13rem;
+        }
+    }
 `
 
 export const Text = styled.div`
@@ -50,5 +67,19 @@ export const Text = styled.div`
         font-size: 1.25rem;
         font-family: 'Montserrat', sans-serif;
         color: ${props => props.theme["font-color"]};
+    }
+
+    @media (max-width: 1024px) {
+        gap: 1rem;
+        max-width: 15rem;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
     }
 `
