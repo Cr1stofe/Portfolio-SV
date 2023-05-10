@@ -30,8 +30,8 @@ export function Skills() {
                     <ul>
                         <li> HTML </li>
                         <li> CSS </li>
-                        <li> JavaScript </li>
-                        <li> React </li>
+                        <li> Wireframes </li>
+                        <li> Testes de usabilidade </li>
                     </ul>
                 </div>
             </HardSkills>

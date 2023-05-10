@@ -81,7 +81,7 @@ export const HelloAndEducation = styled.div`
         }
 
         p {
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
 
         section {

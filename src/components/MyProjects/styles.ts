@@ -10,7 +10,6 @@ export const MyProjectsContainer = styled.div`
     justify-content: center;
 
     @media (max-width: 1024px) {
-        height: fit-content;
         padding: 3.5rem 2rem;
         gap: 2rem;
     }

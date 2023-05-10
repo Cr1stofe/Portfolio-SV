@@ -50,7 +50,7 @@ export const ContactButtons = styled.div`
         border-radius: 20px;
         width: 15rem;
         background: ${props => props.theme["secondary-color"]};
-        color: ${props => props.theme["tertiary-color"]};
+        color: ${props => props.theme["primary-color"]};
         font-size: 1.25rem;
         font-family: 'Montserrat', sans-serif;
         padding: 1.25rem 2rem;

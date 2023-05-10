@@ -8,8 +8,7 @@ export function MyProjects() {
                 <h1> MEUS PROJETOS </h1>
                 <p> Escolhi 3 cases de estudo, feitos após muita pesquisa
                     e entendimento acerca do usuário, pra você conhecer
-                    melhor meu trabalho. Esse site/portfolio foi todo 
-                    desenvolvido por mim, do UI ao desenvolvimento web :) 
+                    melhor meu trabalho :) 
                 </p>
             </Text>
 
