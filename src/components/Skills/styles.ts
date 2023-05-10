@@ -51,6 +51,12 @@ export const Experience = styled(DefaultCards)`
     h1 {
         justify-content: center;
     }
+
+    @media (max-width: 1024px) {
+        h1 {
+            justify-content: flex-start;
+        }
+    }
 `
 
 export const HardSkills = styled(DefaultCards)`
@@ -85,6 +91,12 @@ export const Languages = styled(DefaultCards)`
 
     h1 {
         justify-content: center;
+    }
+
+    @media (max-width: 1024px) {
+        h1 {
+            justify-content: flex-start;
+        }
     }
 `
 

@@ -30,7 +30,7 @@ export const HeroContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1.275rem;
+        padding: 1.275rem 3rem;
     }
 
     button {

@@ -14,7 +14,7 @@ export function Hero({ theme }: ThemeProps) {
 
             <h1>PORTFOLIO</h1>
 
-            <p>UX DESIGNER DESEN. FRONTEND</p>
+            <p>UX/UI DESIGNER</p>
 
             <button>
                 <Link to='about' spy={true} smooth={true} duration={500}>
