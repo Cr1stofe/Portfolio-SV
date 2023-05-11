@@ -1,5 +1,6 @@
 import { MyProjectsContainer, ProjectsButtons, Text } from "./styles";
 import { LinkSimpleHorizontal } from 'phosphor-react'
+import { Link } from 'react-router-dom'
 
 export function MyProjects() {
     return (
@@ -13,20 +14,20 @@ export function MyProjects() {
             </Text>
 
             <ProjectsButtons>
-                <button>
+                <Link to="/project1" className="button">
                     PROJETO 1
                     <LinkSimpleHorizontal size={25}/>
-                </button>
+                </Link>
 
-                <button>
+                <Link to="/project2" className="button">
                     PROJETO 2
                     <LinkSimpleHorizontal size={25}/>
-                </button>
+                </Link>
 
-                <button>
+                <Link to="/project3" className="button">
                     PROJETO 3
                     <LinkSimpleHorizontal size={25}/>
-                </button>
+                </Link>
             </ProjectsButtons>
         </MyProjectsContainer>
     )

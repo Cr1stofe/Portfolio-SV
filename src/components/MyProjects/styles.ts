@@ -21,7 +21,7 @@ export const ProjectsButtons = styled.div`
     gap: 10rem;
     transition: 0.5s;
 
-    button {
+    .button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,7 +45,7 @@ export const ProjectsButtons = styled.div`
         flex-direction: column;
         gap: 2rem;
 
-        button {
+        .button {
             padding: 1rem 2rem;
             font-size: 1rem;
             width: 13rem;

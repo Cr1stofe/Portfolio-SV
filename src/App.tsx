@@ -1,20 +1,26 @@
 import { ThemeProvider } from 'styled-components'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
 
 import { defaultTheme, darkTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 import { useState } from 'react'
-import { Home } from './pages/Home';
 
 export function App() {
   const [theme, setTheme] = useState('light');
 
   return (
     <ThemeProvider theme={theme === 'light' ? defaultTheme : darkTheme}>
-      <Home 
-        theme={theme}
-        setTheme={setTheme}
-      />
+
+      <BrowserRouter>
+        <Router 
+          theme={theme}
+          setTheme={setTheme}
+        />
+      </BrowserRouter>
+
       <GlobalStyle />
+      
     </ThemeProvider>
   )
 }
