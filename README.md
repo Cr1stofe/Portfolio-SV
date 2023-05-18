@@ -1,6 +1,7 @@
-<h1 align="center"> Portfolio UX Designer </h1>
+<h1 align="center"> Portfolio UX/UI Designer </h1>
 <p align="left"> Esse projeto foi desenvolvido em parceria uma UX Designer Junior, onde ela fez o design da aplicação e eu fiquei responsável por desenvolver a mesma. </p>
 <p> O projeto consiste em um Portfolio de uma UX/UI Design Júnior, onde ela poderá expor seus projetos, suas experiências, entre outras coisas. </p>
+<p> Você pode acessar o site clicando <a href="https://samyra-vitoria.netlify.app/"> aqui </a>. </p> 
 
 <p align="center">
   <a href="#tecnologias"> Tecnologias </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
