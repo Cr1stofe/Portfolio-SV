@@ -1,5 +1,5 @@
 <h1 align="center"> Portfolio UX/UI Designer </h1>
-<p align="left"> Esse projeto foi desenvolvido em parceria uma UX Designer Junior, onde ela fez o design da aplicação e eu fiquei responsável por desenvolver a mesma. </p>
+<p align="left"> Esse projeto foi desenvolvido em parceria uma UX/UI Designer Junior, onde ela fez o design da aplicação e eu fiquei responsável por desenvolver a mesma. </p>
 <p> O projeto consiste em um Portfolio de uma UX/UI Design Júnior, onde ela poderá expor seus projetos, suas experiências, entre outras coisas. </p>
 <p> Você pode acessar o site clicando <a href="https://samyra-vitoria.netlify.app/"> aqui </a>. </p> 
 
@@ -27,4 +27,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## <div id="post"> Post </div>
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7059204896574611456/](https://www.linkedin.com/posts/cristofe-albuquerque_react-desenvolvimento-frontend-activity-7062424585882734592-gxFl?utm_source=share&utm_medium=member_desktop"> Post sobre este projeto no Linkedln </a>
+<a href="https://www.linkedin.com/posts/cristofe-albuquerque_react-desenvolvimento-frontend-activity-7062424585882734592-gxFl?utm_source=share&utm_medium=member_desktop"> Post sobre este projeto no Linkedln </a>
