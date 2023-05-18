@@ -12,7 +12,7 @@
 
 | Desktop | Mobile  |
 | ------------------- | ------------------- |
-| <img src=""> | <img src=""> |
+| <img src="https://github.com/Cr1stofe/Portfolio-SV/blob/82d9b5718d97f0d611e45698b652859391216408/Layouts/porftolio-desktop.png"> | <img src=""> |
 
 
 ## 🚀 Tecnologias
